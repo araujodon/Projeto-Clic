@@ -1,0 +1,610 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #0001;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+}
+
+.m a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.myTopnav {
+    padding: "30px 10px";
+}
+
+.m a:hover {
+    background-color: #ddd;
+    color: black;
+    text-decoration: none;
+}
+
+.m .icon {
+    display: none;
+    color: white;
+}
+
+
+/* ESTILIZAÇÃO DO MAIN */
+
+main {
+    background-image: url("../img/web/bg1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 672px;
+}
+
+.m {
+    float: right;
+    padding: 0 70px;
+    left: 20px;
+}
+
+.m1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.m a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.t {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
+    text-align: center;
+    justify-content: center;
+}
+
+.l {
+    display: flex;
+    padding: 35px;
+}
+
+.ft1 {
+    background-image: url("../img/web/s1\ ft1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 662px;
+}
+
+.centralizar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn {
+    font-family: arial;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    width: 270px;
+    height: 40px;
+    background-color: rgb(24, 207, 207);
+    box-sizing: border-box;
+    box-shadow: white;
+    color: white;
+    border-radius: 10px;
+}
+
+.btn-blue:active {
+    color: #330000;
+    background-color: #FFFFFF;
+    border-radius: 10px 0px 10px 0px;
+}
+
+
+/* ESTILIZAÇÃO DE TITULO PADRÃO */
+
+h1 {
+    max-width: 770px;
+    line-height: 2;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+h2 {
+    margin-bottom: 50px;
+    text-align: center;
+    max-width: 770px;
+    line-height: 1.5;
+}
+
+
+/* ESTILIZAÇÃO DO MAIN */
+
+.s1 {
+    display: flex;
+    padding: 100px;
+    flex-direction: column;
+}
+
+.lorem {
+    display: flex;
+    padding-top: 20px;
+    text-align: start;
+    max-width: 770px;
+    line-height: 1.5;
+}
+
+.borda {
+    width: 600px;
+    height: 400px;
+    border: solid white 1px;
+    box-shadow: 10px 10px 10px 5px #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-size: cover;
+    padding: 30px;
+    z-index: 999;
+    background-color: white;
+}
+
+#servicos {
+    display: flex;
+    padding: 0 100px;
+    flex-direction: column;
+}
+
+#diferenciais {
+    display: flex;
+    padding: 0 100px;
+    flex-direction: column;
+}
+
+.card {
+    width: 280px;
+    height: 360px;
+    padding: 2rem 2rem;
+    position: relative;
+    display: flex;
+    transition: 0.5s ease-in-out;
+}
+
+.wrapper {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    padding: 20px;
+    margin-bottom: 40px;
+    flex-direction: row;
+}
+
+.wrapper2 {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card2 {
+    width: 280px;
+    height: 360px;
+    padding: 2rem 1rem;
+    position: relative;
+    border-radius: 20px solid;
+    display: flex;
+    transition: 0.5s ease-in-out;
+    line-height: 3.5;
+}
+
+.se {
+    justify-content: flex-start;
+    padding: 100px;
+    flex-direction: column;
+}
+
+
+/* ESTILIZAÇÃO DA ANIMAÇÃO */
+
+.card:hover {
+    transform: translateY(20px);
+}
+
+.card:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(123, 131, 130, 0.5), rgb(172, 163, 163));
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.card:hover:before {
+    opacity: 1;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card .info {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card .info h2 {
+    margin: 0;
+    color: yellow;
+}
+
+.card .info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    display: flex;
+    margin-bottom: 50px;
+    text-align: center;
+    max-width: 770px;
+    line-height: 1.5;
+}
+
+.card .info .btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.card .info .btn:hover {
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card2:hover {
+    transform: translateY(20px);
+}
+
+.card2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.card2:hover:before {
+    opacity: 1;
+}
+
+.card2 img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px solid;
+    top: 0;
+    left: 0;
+}
+
+.card2 .info2 {
+    position: relative;
+    z-index: 3;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s all;
+}
+
+.card2:hover .info2 {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.card2 .info2 h2 {
+    margin: 0;
+}
+
+.card2 .info2 p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    display: flex;
+    margin-bottom: 50px;
+    text-align: center;
+    max-width: 770px;
+    line-height: 1.5;
+}
+
+.card2 .info2 .btn {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.card2 .info2 .btn:hover {
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ESTILIZAÇÃO DO FOOTER */
+
+#contato {
+    background-color: yellow;
+    height: 620px;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.footer1 {
+    background-color: #1C1C1C;
+    height: 580px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.direita {
+    float: right;
+    justify-content: flex-end;
+    padding: 20px;
+    background-color: #CDC5BF;
+    height: 415px;
+    margin-top: 60px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input {
+    margin: 10px 0px;
+    height: 35px;
+}
+
+.msg {
+    margin: 20px 0px;
+}
+
+.esquerda {
+    float: left;
+    justify-content: flex-start;
+    height: 450px;
+    width: 415px;
+    margin-top: 60px;
+}
+
+.logof {
+    width: 100%;
+}
+
+.fli {
+    display: flex;
+    float: right;
+    padding-right: 30px;
+    padding-top: 5px;
+}
+
+#f2 {
+    padding-right: 30px;
+}
+
+.icons {
+    display: flex;
+}
+
+#pf {
+    color: white;
+    margin-top: 2px;
+}
+
+#imge {
+    margin-right: 7px;
+    float: left;
+}
+
+#imgph {
+    margin-left: 90px;
+    float: right;
+}
+
+#ph {
+    color: white;
+    margin-top: 1px;
+    font-size: 10pt;
+}
+
+#gp {
+    color: white;
+    font-size: 7.3pt;
+}
+
+.icons1 {
+    display: flex;
+    margin-top: 40px;
+}
+
+.texto {
+    color: white;
+    text-indent: 10px;
+    font-size: 10pt;
+    font-weight: bolder;
+    text-indent: 0px;
+}
+
+#l2 {
+    color: yellow;
+}
+
+#l3 {
+    color: aqua;
+}
+
+.myTopnav {
+    padding: "30px 10px";
+}
+
+
+/* ESTILIZAÇÃO DA RESPONSIVIDADE */
+
+@media(max-width: 750px) {
+    .borda {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+    .wrapper {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+    .wrapper2 {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: column;
+    }
+    .esquerda {
+        flex-wrap: wrap;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+    .direita {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .footer1 {
+        flex-wrap: wrap;
+        height: 1060px;
+    }
+    #contato {
+        height: 1090px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .m a:not(:first-child) {
+        display: none;
+    }
+    .m a.icon {
+        float: right;
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .m.responsive .icon {
+        right: 0;
+        top: 0;
+    }
+    .responsive {
+        padding: 0;
+    }
+    .m.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+        text-decoration: none;
+    }
+    .m.responsive a:hover {
+        text-decoration: none;
+    }
+    .myTopnav {
+        padding: 0px;
+        color: white;
+    }
+}
+
+
+/* ESTILIZAÇÃO DO BOTÃO DO FOOTER */
+
+.botao {
+    width: 350px;
+    height: 40px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: inline-block;
+    width: 350px;
+    height: 40px;
+    background-color: rgb(24, 207, 207);
+    box-sizing: border-box;
+    box-shadow: white;
+    color: white;
+}
+
+.botao:hover {
+    color: #330000;
+    background-color: #FFFFFF;
+    border-radius: 10px 0px 10px 0px;
+}
+
+
+/* ESTILIZAÇÃO DO TITULO DA HOME */
+
+.h1p {
+    font-size: 35pt;
+}
+
+.icon {
+    visibility: visible;
+}
